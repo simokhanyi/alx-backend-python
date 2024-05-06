@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-""" asynchronous coroutine """
+"""
+Function with integers n and max_delay as arguments
+that measures the total execution time
+"""
 
 from typing import Callable
 import asyncio

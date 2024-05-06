@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" asynchronous coroutine """
+""" code that alter wait_n into a new function """
 
 import asyncio
 from typing import List

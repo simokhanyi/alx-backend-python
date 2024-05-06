@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-""" asynchronous coroutine """
+"""
+An async routine called wait_n that takes in 2 int arguments
+"""
 
 import asyncio
 from typing import List

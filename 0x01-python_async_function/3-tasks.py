@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-""" asynchronous coroutine """
+"""
+A function that takes an integer max_delay and returns a asyncio
+"""
 
 import asyncio
 from typing import Coroutine
