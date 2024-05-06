@@ -12,7 +12,8 @@ import random
 
 async def wait_random(max_delay=10):
     """
-    Waits for a random delay between 0 and max_delay seconds.
+    Asynchronous coroutine that waits for a random delay between 0
+    and max_delay seconds.
 
     Args:
         max_delay (int, optional): Maximum delay in seconds. Defaults to 10.
@@ -27,6 +28,8 @@ async def wait_random(max_delay=10):
 
 # Test the coroutine
 if __name__ == "__main__":
+    import asyncio
+
     print(asyncio.run(wait_random()))
     print(asyncio.run(wait_random(5)))
     print(asyncio.run(wait_random(15)))
