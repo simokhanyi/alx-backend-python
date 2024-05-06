@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+""" asynchronous coroutine """
+
+import asyncio
+from typing import Coroutine
+
+wait_random = __import__('0-basic_async_syntax').wait_random
+
+
+def task_wait_random(max_delay: int) -> asyncio.Task:
+    coro = wait_random(max_delay)
+    return asyncio.create_task(coro)
+
+
+# Test the function
+if __name__ == "__main__":
+    import asyncio
+
+    async def test(max_delay: int) -> None:
+        task = task_wait_random(max_delay)
+        await task
+        print(task.__class__)
+
+    asyncio.run(test(5))
